@@ -1,0 +1,35 @@
+@media (max-width: 1200px) {
+  .menu-nav {
+    width: 85%;
+  }
+  .menu-link{
+    padding: .5rem;
+  }
+}
+@media (max-width: 979px) {
+  .profile-right{
+    font-size: 12px;
+  }
+  .profile-name{
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .logo {
+    top: 0;
+  }
+  .logo embed {
+    width: 50%;
+  }
+  .menu-nav {
+    width: 100%;
+  }
+  .menu-link{
+    padding: 1rem;
+  }
+  .nav-item{
+    width: 100%;
+    background-image: none;
+  }
+}
+@media (max-width: 480px) {
+}
