@@ -1,0 +1,25 @@
+.form {
+    padding-top: 2rem;
+  width: 90%;
+  margin: 0 auto;
+}
+.add{
+  
+  min-height: 70vh;
+}
+.form-header {
+  text-align: center;
+  color: #784a45;
+  font-size: 28px;
+  font-weight: 700;
+}
+.form-control:focus {
+  border-color: #ab8a6b;
+  box-shadow: 0 0 5px rgba(171, 138, 107, 1);
+}
+.form-control{
+  width: 80%;
+}
+.btn-lightbrown{
+  font-weight: 700;
+}
