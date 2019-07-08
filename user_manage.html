@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/user_manage.css">
+    <link rel="stylesheet" href="./css/RWD.css">
+    <title>User Manage</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="header">
+            <div class="head">
+                <div class="profile">
+                    <div class="profile-right">
+                        <!--未登入前-->
+                        <!-- <ul class="list">
+                            <li class="b-right">註冊</li>
+                            <li>登入</li>
+                        </ul> -->
+                        <!--登入後-->
+                        <div class="dropdown mid">
+                            <button class="btn dropdown-toggle btn-md" type="button" id="dropdownMenu2"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="./asset/user.png" width="32px"><span class="profile-name">吳小美</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <button class="dropdown-item" type="button">修改個人資訊</button>
+                                <button class="dropdown-item" type="button">會員專區</button>
+                                <div class="dropdown-divider"></div>
+                                <button class="dropdown-item" type="button">登出</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="logo">
+                <embed src="./asset/logo.svg" type="image/svg+xml" />
+            </div>
+            <div class="menu">
+                <nav class="menu-nav navbar navbar-expand-lg navbar-light ">
+                    <!--響應式漢堡條-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+                        aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarsExample05">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="menu-link" href="#">最新消息</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="menu-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">景點簡介</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdown05">
+                                    <a class="dropdown-item" href="#">第二市場</a>
+                                    <a class="dropdown-item" href="#">第三市場</a>
+                                    <a class="dropdown-item" href="#">第五市場</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu-link" href="#">活動簡介</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu-link" href="#">嚮導簡介</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu-link" href="#">嚮導課程訓練</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu-link" href="#">導覽媒合</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="content">
+            <div class="row">
+                <ul class="nav col-lg-4 col-md-12 col-sm-12 col-12" id="myTab" role="tablist">
+                    <li class="table-header">我的資訊</li>
+                    <li class="AManage-nav-item">
+                        <a class="AManage-nav-link" id="course-tab" data-toggle="tab" href="#course" role="tab"
+                            aria-controls="course" aria-selected="true">課程管理</a>
+                    </li>
+                    <li class="AManage-nav-item ">
+                        <a class="AManage-nav-link" id="activity-tab" data-toggle="tab" href="#activity" role="tab"
+                            aria-controls="activity" aria-selected="false">活動管理</a>
+                    </li>
+                    <li class="AManage-nav-item">
+                        <a class="AManage-nav-link" id="attraction-tab" data-toggle="tab" href="#attraction" role="tab"
+                            aria-controls="attraction" aria-selected="false">景點管理</a>
+                    </li>
+                    <li class="AManage-nav-item">
+                        <a class="AManage-nav-link" id="match-tab" data-toggle="tab" href="#match" role="tab"
+                            aria-controls="match" aria-selected="false">媒合管理</a>
+                    </li>
+                </ul>
+                <div class="tab-content col-lg-8 col-md-12 col-sm-12 col-12" id="myTabContent">
+                    <div class="tab-pane fade show active" id="course" role="tabpanel" aria-labelledby="course-tab">
+                        <div class="table-header col-lg-6">課程管理</div>
+                        <div class="manage-content pt-4">
+                            <table class="table table-bordered col-lg-11 col-md-11 col-sm-11 col-12">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" width="5%">#</th>
+                                        <th scope="row">課程名稱</th>                                       
+                                        <th scope="row" width="18%">參加日期</th>
+                                        <th scope="row" width="15%">取消</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>第二市場導覽簡介</td>
+                                        <td>2019-07-08</td>                                       
+                                        <td> <button type="button" class="btn btn-red">
+                                                取消課程
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>第三市場導覽簡介</td>
+                                        <td>2019-07-09</td>                                       
+                                        <td> <button type="button" class="btn btn-red">
+                                                取消課程
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>第三市場導覽簡介</td>
+                                        <td>2019-07-10</td>                                      
+                                        <td> <button type="button" class="btn btn-red">
+                                                取消課程
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="activity" role="tabpanel" aria-labelledby="activity-tab">
+                        <div class="table-header col-lg-6">活動管理</div>
+                        <div class="manage-content pt-4">
+                            ....
+                            </div>
+                    </div>
+                    <div class="tab-pane fade" id="attraction" role="tabpanel" aria-labelledby="attraction-tab">
+                        <div class="table-header col-lg-6">景點管理</div>
+                        <div class="manage-content pt-4">
+                            ...
+                            </div>
+                    </div>
+                    <div class="tab-pane fade" id="match" role="tabpanel" aria-labelledby="match-tab">
+                        <div class="table-header col-lg-6">媒合管理</div>
+                        <div class="manage-content pt-4">
+                            ...
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="footer pt-5 pb-5">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-right pr-5">
+                    <img src="./asset/mail.png" width="64">
+                    <p class="mt-2 font-weight-bold">聯絡我們</p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6 pl-5">
+                    <img src="./asset/fb.png" width="64">
+                    <p class="mt-2 font-weight-bold">紛絲專業</p>
+                </div>
+            </div>
+            <div class="bottom-bar"></div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</html>

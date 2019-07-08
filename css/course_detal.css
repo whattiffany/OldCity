@@ -39,3 +39,12 @@
   width: 70%;
   min-height: 70vh;
 }
+.btn-blue{
+  background-color: #60ABCB;
+  color:#ffffff;
+  font-weight: 700;
+}
+.btn-blue:hover{
+  background-color: #4A869F;
+  color: #ffffff;
+}
