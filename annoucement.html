@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/user_manage.css">
+    <link rel="stylesheet" href="./css/annoucement.css">
     <link rel="stylesheet" href="./css/RWD.css">
-    <title>User Manage</title>
+    <title>Annoucement</title>
 </head>
 
 <body>
@@ -85,86 +85,88 @@
         </div>
         <div class="content">
             <div class="row">
-                <ul class="nav col-lg-4 col-md-12 col-sm-12 col-12" id="myTab" role="tablist">
-                    <li class="table-header">我的資訊</li>
+                <ul class="nav col-lg-3 col-md-12 col-sm-12 col-12" id="myTab" role="tablist">
+                    <li class="table-header">最新消息</li>
                     <li class="AManage-nav-item">
-                        <a class="AManage-nav-link" id="course-tab" data-toggle="tab" href="#course" role="tab"
-                            aria-controls="course" aria-selected="true">課程管理</a>
+                        <a class="AManage-nav-link" id="allnews-tab" data-toggle="tab" href="#allnews" role="tab"
+                            aria-controls="allnews" aria-selected="true">全部消息</a>
                     </li>
                     <li class="AManage-nav-item ">
-                        <a class="AManage-nav-link" id="activity-tab" data-toggle="tab" href="#activity" role="tab"
-                            aria-controls="activity" aria-selected="false">活動管理</a>
+                        <a class="AManage-nav-link" id="activitynews-tab" data-toggle="tab" href="#activitynews"
+                            role="tab" aria-controls="activitynews" aria-selected="false">活動消息</a>
                     </li>
                     <li class="AManage-nav-item">
-                        <a class="AManage-nav-link" id="attraction-tab" data-toggle="tab" href="#attraction" role="tab"
-                            aria-controls="attraction" aria-selected="false">景點管理</a>
+                        <a class="AManage-nav-link" id="attractionnews-tab" data-toggle="tab" href="#attractionnews"
+                            role="tab" aria-controls="attractionnews" aria-selected="false">景點消息</a>
                     </li>
                     <li class="AManage-nav-item">
-                        <a class="AManage-nav-link" id="match-tab" data-toggle="tab" href="#match" role="tab"
-                            aria-controls="match" aria-selected="false">媒合管理</a>
+                        <a class="AManage-nav-link" id="coursenews-tab" data-toggle="tab" href="#coursenews" role="tab"
+                            aria-controls="coursenews" aria-selected="false">課程消息</a>
+                    </li>
+                    <li class="AManage-nav-item">
+                        <a class="AManage-nav-link" id="medianews-tab" data-toggle="tab" href="#medianews" role="tab"
+                            aria-controls="medianews" aria-selected="false">媒體消息</a>
                     </li>
                 </ul>
-                <div class="tab-content col-lg-8 col-md-12 col-sm-12 col-12" id="myTabContent">
-                    <div class="tab-pane fade show active" id="course" role="tabpanel" aria-labelledby="course-tab">
-                        <div class="table-header col-lg-6">課程管理</div>
-                        <div class="manage-content pt-4">
-                            <table class="table table-bordered col-lg-11 col-md-11 col-sm-11 col-12">
+                <div class="tab-content col-lg-9 col-md-12 col-sm-12 col-12" id="myTabContent">
+                    <div class="tab-pane fade show active pt-4" id="allnews" role="tabpanel"
+                        aria-labelledby="allnews-tab">
+                        <div class="table-header col-lg-6">全部消息</div>
+                        <div class="manage-content">
+                            <table class="table col-lg-11 col-md-11 col-sm-11 col-12">
                                 <tbody>
-                                    <tr>
-                                        <th scope="row" width="5%">#</th>
-                                        <th scope="row">課程名稱</th>                                       
-                                        <th scope="row" width="18%">參加日期</th>
-                                        <th scope="row" width="15%">取消</th>
+                                    <tr class="news_title">
+                                        <th scope="row">分類</th>
+                                        <th scope="row">公告標題</th>
+                                        <th scope="row" width="30%">公告日期</th>
+
                                     </tr>
                                     <tr>
-                                        <td>1</td>
+                                        <td>活動</td>
                                         <td>第二市場導覽簡介</td>
-                                        <td>2019-07-08</td>                                       
-                                        <td> <button type="button" class="btn btn-red">
-                                                取消課程
-                                            </button>
-                                        </td>
+                                        <td class="font-italic">2019-07-08</td>
+
                                     </tr>
                                     <tr>
-                                        <td>2</td>
+                                        <td>景點</td>
                                         <td>第三市場導覽簡介</td>
-                                        <td>2019-07-09</td>                                       
-                                        <td> <button type="button" class="btn btn-red">
-                                                取消課程
-                                            </button>
-                                        </td>
+                                        <td class="font-italic">2019-07-09</td>
+
                                     </tr>
                                     <tr>
-                                        <td>3</td>
+                                        <td>課程</td>
                                         <td>第三市場導覽簡介</td>
-                                        <td>2019-07-10</td>                                      
-                                        <td> <button type="button" class="btn btn-red">
-                                                取消課程
-                                            </button>
-                                        </td>
+                                        <td class="font-italic">2019-07-10</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="activity" role="tabpanel" aria-labelledby="activity-tab">
-                        <div class="table-header col-lg-6">活動管理</div>
-                        <div class="manage-content pt-4">
-                            ....
-                            </div>
-                    </div>
-                    <div class="tab-pane fade" id="attraction" role="tabpanel" aria-labelledby="attraction-tab">
-                        <div class="table-header col-lg-6">景點管理</div>
-                        <div class="manage-content pt-4">
-                            ...
-                            </div>
-                    </div>
-                    <div class="tab-pane fade" id="match" role="tabpanel" aria-labelledby="match-tab">
-                        <div class="table-header col-lg-6">媒合管理</div>
-                        <div class="manage-content pt-4">
-                            ...
-                        </div>
+                    <div class="tab-pane fade pt-4" id="activitynews" role="tabpanel"
+                        aria-labelledby="activitynews-tab">
+                        <div class="table-header col-lg-6">活動消息</div>
+                        <div class="manage-content">
 
+                        </div>
+                    </div>
+                    <div class="tab-pane fade pt-4" id="attractionnews" role="tabpanel"
+                        aria-labelledby="attractionnews-tab">
+                        <div class="table-header col-lg-6">景點消息</div>
+                        <div class="manage-content">
+                            3
+                        </div>
+                    </div>
+                    <div class="tab-pane fade pt-4" id="coursenews" role="tabpanel" aria-labelledby="coursenews-tab">
+                        <div class="table-header col-lg-6">課程消息</div>
+                        <div class="manage-content">
+                            4
+                        </div>
+                    </div>
+                    <div class="tab-pane fade pt-4" id="medianews" role="tabpanel" aria-labelledby="medianews-tab">
+                        <div class="table-header col-lg-6">媒體消息</div>
+                        <div class="manage-content">
+                            5
+                        </div>
                     </div>
                 </div>
 
@@ -179,7 +181,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 col-6 pl-5">
                     <img src="./asset/fb.png" width="64">
-                    <p class="mt-2 font-weight-bold">紛絲專業</p>
+                    <p class="mt-2 font-weight-bold">粉絲專業</p>
                 </div>
             </div>
             <div class="bottom-bar"></div>
@@ -187,13 +189,13 @@
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
 
 </html>
