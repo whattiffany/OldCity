@@ -96,9 +96,6 @@
   .manage-content {
     font-size: 15px;
   } 
-  .btn-red {
-    font-size: 13px;
-  } 
 }
 @media (max-width: 740px) {
   .AManage-nav-item {
