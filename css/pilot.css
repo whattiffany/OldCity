@@ -1,0 +1,18 @@
+.pilot{
+  width: 70%;
+  margin: 0 auto;
+}
+.card{
+  border: 1px solid rgba(0,0,0,0);
+}
+.card-title{
+  letter-spacing: 5px;
+  color: #ab8a6b;
+}
+.card-text{
+  color: gray;
+}
+.img-thumbnail{
+  border: 2px solid #ab8a6b;
+  border-radius: 3rem;
+}
