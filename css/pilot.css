@@ -7,7 +7,7 @@
 }
 .card-title{
   letter-spacing: 5px;
-  color: #ab8a6b;
+  color: #784a45;
 }
 .card-text{
   color: gray;
@@ -15,4 +15,20 @@
 .img-thumbnail{
   border: 2px solid #ab8a6b;
   border-radius: 3rem;
+}
+.start{
+  font-size: 24px;
+}
+.name{
+  font-size: 28px;
+  letter-spacing: 10px;
+}
+.article-class{
+  border-radius: 10px;
+  background-color: #784a45;
+  color: #ffffff;
+  letter-spacing: 10px;
+}
+.article-title{
+  font-size: 18px;
 }
